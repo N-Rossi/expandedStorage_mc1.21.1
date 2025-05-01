@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "expandedstorage:gallium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "expandedstorage:gallium_ingot"
+  }
+}
