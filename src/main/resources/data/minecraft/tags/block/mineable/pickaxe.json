@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "expandedstorage:gallium_block",
+    "expandedstorage:gallium_ore"
+  ]
+}
