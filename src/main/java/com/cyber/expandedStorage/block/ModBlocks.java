@@ -22,6 +22,8 @@ public class ModBlocks {
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ExpandedStorage.MOD_ID);
 
+/**    use .noLootTable if item should not drop anything upon breaking */
+
     public static final DeferredBlock<Block> GALLIUM_BLOCK = registerBlock("gallium_block", () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
     public static final DeferredBlock<Block> GALLIUM_ORE = registerBlock("gallium_ore", () -> new DropExperienceBlock(
             ConstantInt.of(0),
