@@ -14,7 +14,7 @@ public class ModBlockEntities {
             DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, ExpandedStorage.MOD_ID);
 
     public static final Supplier<BlockEntityType<StorageControllerBlockEntity>> STORAGE_CONTROLLER_BE =
-            BLOCK_ENTITIES.register("pedestal_be", () -> BlockEntityType.Builder.of(
+            BLOCK_ENTITIES.register("storage_controller_be", () -> BlockEntityType.Builder.of(
                     StorageControllerBlockEntity::new, ModBlocks.STORAGE_CONTROLLER.get()).build(null));
 
     public static void register(IEventBus eventBus) {
