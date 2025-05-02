@@ -3,6 +3,7 @@ package com.cyber.expandedStorage.block;
 import com.cyber.expandedStorage.ExpandedStorage;
 import com.cyber.expandedStorage.item.ModItems;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -28,6 +29,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GALLIUM_ORE = registerBlock("gallium_ore", () -> new DropExperienceBlock(
             ConstantInt.of(0),
             BlockBehaviour.Properties.of().mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+    public static final DeferredBlock<Block> NETHER_GALLIUM_ORE = registerBlock("nether_gallium_ore", () -> new DropExperienceBlock(
+                UniformInt.of(1, 5),
+                BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
 
     public static final DeferredBlock<Block> STORAGE_EXTENDER = registerBlock("storage_extender", () -> new Block(
             BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(2.5F).sound(SoundType.WOOD).ignitedByLava()

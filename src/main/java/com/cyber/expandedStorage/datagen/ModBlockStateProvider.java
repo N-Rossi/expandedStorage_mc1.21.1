@@ -16,6 +16,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.GALLIUM_BLOCK);
         blockWithItem(ModBlocks.GALLIUM_ORE);
+        blockWithItem(ModBlocks.NETHER_GALLIUM_ORE);
         blockWithItem(ModBlocks.STORAGE_CONTROLLER);
         blockWithItem(ModBlocks.STORAGE_EXTENDER);
     }
