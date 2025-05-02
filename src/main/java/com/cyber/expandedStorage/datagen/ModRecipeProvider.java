@@ -22,7 +22,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> GALLIUM_SMELTABLES = List.of(ModItems.RAW_GALLIUM,
-                ModBlocks.GALLIUM_ORE);
+                ModBlocks.GALLIUM_ORE, ModBlocks.NETHER_GALLIUM_ORE);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GALLIUM_BLOCK.get())
                 .pattern("BBB")
