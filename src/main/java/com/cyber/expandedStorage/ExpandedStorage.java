@@ -1,6 +1,7 @@
 package com.cyber.expandedStorage;
 
 import com.cyber.expandedStorage.block.ModBlocks;
+import com.cyber.expandedStorage.block.entity.ModBlockEntities;
 import com.cyber.expandedStorage.item.ModCreativeModeTabs;
 import com.cyber.expandedStorage.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -44,6 +45,7 @@ public class ExpandedStorage {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
 
         modEventBus.addListener(this::addCreative);
