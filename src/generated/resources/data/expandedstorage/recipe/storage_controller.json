@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "expandedstorage:gallium_block"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "WIW",
+    "IGI",
+    "WIW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "expandedstorage:storage_controller"
+  }
+}

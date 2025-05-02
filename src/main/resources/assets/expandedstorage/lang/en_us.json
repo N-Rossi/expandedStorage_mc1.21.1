@@ -1,6 +1,10 @@
 {
+  "creativetab.expandedstorage.expanded_storage_tab": "Expanded Storage",
+
   "block.expandedstorage.gallium_block": "Block of Gallium",
   "block.expandedstorage.gallium_ore": "Gallium Ore",
+  "block.expandedstorage.storage_extender": "Storage Extender",
+  "block.expandedstorage.storage_controller": "Storage Controller",
 
   "item.expandedstorage.gallium_ingot": "Gallium Ingot",
   "item.expandedstorage.raw_gallium": "Raw Gallium"
