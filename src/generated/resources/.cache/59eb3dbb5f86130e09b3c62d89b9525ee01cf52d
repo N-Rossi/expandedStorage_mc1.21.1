@@ -1,6 +1,0 @@
-// 1.21.1	2025-05-01T22:11:21.7452287	Loot Tables
-72b7becb9bbfac54a5639cce80c05b09f882dd40 data/expandedstorage/loot_table/blocks/gallium_block.json
-90a00c4e63a632948e02123108543136348a1ae4 data/expandedstorage/loot_table/blocks/gallium_ore.json
-5332683c0f8f5a3e2d10dcde8ef40ec305a022f7 data/expandedstorage/loot_table/blocks/nether_gallium_ore.json
-a172a5dfa1cf99dec495ad1b9f079b9ee0ee7e5c data/expandedstorage/loot_table/blocks/storage_controller.json
-dddd16e099772b0deb5971b7f5eee73005c958a6 data/expandedstorage/loot_table/blocks/storage_extender.json
