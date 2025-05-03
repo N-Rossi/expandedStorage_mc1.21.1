@@ -1,9 +1,14 @@
 package com.cyber.expandedStorage;
 
 import com.cyber.expandedStorage.block.ModBlocks;
+import com.cyber.expandedStorage.block.entity.ModBlockEntities;
 import com.cyber.expandedStorage.item.ModCreativeModeTabs;
 import com.cyber.expandedStorage.item.ModItems;
+import com.cyber.expandedStorage.screen.ModMenuTypes;
+import com.cyber.expandedStorage.screen.custom.StorageControllerMenu;
+import com.cyber.expandedStorage.screen.custom.StorageControllerScreen;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -44,6 +49,8 @@ public class ExpandedStorage {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
 
         modEventBus.addListener(this::addCreative);
@@ -71,6 +78,11 @@ public class ExpandedStorage {
         public static void onClientSetup(FMLClientSetupEvent event)
         {
 
+        }
+
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.STORAGE_CONTROLLER_MENU.get(), StorageControllerScreen::new);
         }
     }
 }

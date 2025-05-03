@@ -1,6 +1,7 @@
 package com.cyber.expandedStorage.block;
 
 import com.cyber.expandedStorage.ExpandedStorage;
+import com.cyber.expandedStorage.block.custom.StorageControllerBlock;
 import com.cyber.expandedStorage.item.ModItems;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -37,9 +38,11 @@ public class ModBlocks {
             BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(2.5F).sound(SoundType.WOOD).ignitedByLava()
     ));
 
-    public static final DeferredBlock<Block> STORAGE_CONTROLLER = registerBlock("storage_controller", () -> new Block(
-            BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(2.5F).sound(SoundType.WOOD).ignitedByLava()
-    ));
+//    public static final DeferredBlock<Block> STORAGE_CONTROLLER = registerBlock("storage_controller", () -> new Block(
+//            BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).strength(2.5F).sound(SoundType.WOOD).ignitedByLava()
+//    ));
+
+    public static final DeferredBlock<Block> STORAGE_CONTROLLER = registerBlock("storage_controller", () -> new StorageControllerBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     private  static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
