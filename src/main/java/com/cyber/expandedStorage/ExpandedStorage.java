@@ -5,6 +5,7 @@ import com.cyber.expandedStorage.block.entity.ModBlockEntities;
 import com.cyber.expandedStorage.item.ModCreativeModeTabs;
 import com.cyber.expandedStorage.item.ModItems;
 import com.cyber.expandedStorage.screen.ModMenuTypes;
+import com.cyber.expandedStorage.screen.custom.GalliumChestScreen;
 import com.cyber.expandedStorage.screen.custom.StorageControllerMenu;
 import com.cyber.expandedStorage.screen.custom.StorageControllerScreen;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -83,6 +84,7 @@ public class ExpandedStorage {
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.STORAGE_CONTROLLER_MENU.get(), StorageControllerScreen::new);
+            event.register(ModMenuTypes.GALLIUM_CHEST_MENU.get(), GalliumChestScreen::new);
         }
     }
 }

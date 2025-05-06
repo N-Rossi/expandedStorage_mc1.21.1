@@ -35,7 +35,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.GALLIUM_BLOCK)
                 .unlockedBy("has_gallium_block", has(ModBlocks.GALLIUM_BLOCK)).save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STORAGE_CONTROLLER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GALLIUM_CHEST.get())
                 .pattern("WIW")
                 .pattern("IGI")
                 .pattern("WIW")

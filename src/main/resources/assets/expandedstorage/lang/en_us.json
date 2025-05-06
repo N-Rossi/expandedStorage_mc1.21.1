@@ -6,6 +6,7 @@
   "block.expandedstorage.nether_gallium_ore": "Nether Gallium Ore",
   "block.expandedstorage.storage_extender": "Storage Extender",
   "block.expandedstorage.storage_controller": "Storage Controller",
+  "block.expandedstorage.gallium_chest": "Gallium Chest",
 
   "item.expandedstorage.gallium_ingot": "Gallium Ingot",
   "item.expandedstorage.raw_gallium": "Raw Gallium"

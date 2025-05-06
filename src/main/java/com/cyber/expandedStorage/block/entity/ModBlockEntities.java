@@ -17,6 +17,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("storage_controller_be", () -> BlockEntityType.Builder.of(
                     StorageControllerBlockEntity::new, ModBlocks.STORAGE_CONTROLLER.get()).build(null));
 
+    public static final Supplier<BlockEntityType<GalliumChestBlockEntity>> GALLIUM_CHEST_BE =
+            BLOCK_ENTITIES.register("gallium_chest_be", () ->
+                    BlockEntityType.Builder.of(GalliumChestBlockEntity::new, ModBlocks.GALLIUM_CHEST.get()).build(null));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }
