@@ -1,6 +1,7 @@
 package com.cyber.expandedStorage.screen;
 
 import com.cyber.expandedStorage.ExpandedStorage;
+import com.cyber.expandedStorage.screen.custom.GalliumChestMenu;
 import com.cyber.expandedStorage.screen.custom.StorageControllerMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -17,6 +18,8 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<StorageControllerMenu>> STORAGE_CONTROLLER_MENU =
             registerMenuType("storage_controller_menu", StorageControllerMenu::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<GalliumChestMenu>> GALLIUM_CHEST_MENU =
+            registerMenuType("gallium_chest_menu", (IContainerFactory<GalliumChestMenu>) GalliumChestMenu::new);
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {

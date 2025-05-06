@@ -30,6 +30,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.GALLIUM_BLOCK.get());
         dropSelf(ModBlocks.STORAGE_CONTROLLER.get());
+        dropSelf(ModBlocks.GALLIUM_CHEST.get());
         dropSelf(ModBlocks.STORAGE_EXTENDER.get());
 
         add(ModBlocks.GALLIUM_ORE.get(),

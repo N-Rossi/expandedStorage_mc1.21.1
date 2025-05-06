@@ -28,5 +28,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.GALLIUM_ORE.get())
                 .add(ModBlocks.NETHER_GALLIUM_ORE.get());
 
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.GALLIUM_CHEST.get());
+
     }
 }

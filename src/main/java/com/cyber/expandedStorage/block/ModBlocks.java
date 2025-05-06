@@ -1,6 +1,8 @@
 package com.cyber.expandedStorage.block;
 
 import com.cyber.expandedStorage.ExpandedStorage;
+import com.cyber.expandedStorage.block.custom.GalliumChestBlock;
+import com.cyber.expandedStorage.block.custom.GalliumChestContainer;
 import com.cyber.expandedStorage.block.custom.StorageControllerBlock;
 import com.cyber.expandedStorage.item.ModItems;
 import net.minecraft.util.valueproviders.ConstantInt;
@@ -43,6 +45,9 @@ public class ModBlocks {
 //    ));
 
     public static final DeferredBlock<Block> STORAGE_CONTROLLER = registerBlock("storage_controller", () -> new StorageControllerBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
+    public static final DeferredBlock<Block> GALLIUM_CHEST = registerBlock("gallium_chest", () -> new GalliumChestBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
 
     private  static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
