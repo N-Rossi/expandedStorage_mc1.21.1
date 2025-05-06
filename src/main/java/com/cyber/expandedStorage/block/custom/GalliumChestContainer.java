@@ -7,7 +7,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 
 public class GalliumChestContainer implements Container {
-    private final int SIZE = 54;
+    private final int SIZE = 27;
     private final NonNullList<ItemStack> items = NonNullList.withSize(
             // The size of the list, i.e. the amount of slots in our container.
             SIZE,
@@ -16,7 +16,6 @@ public class GalliumChestContainer implements Container {
     );
 
     public GalliumChestContainer() {
-
     }
 
     // The amount of slots in our container.
@@ -83,5 +82,10 @@ public class GalliumChestContainer implements Container {
     public void clearContent() {
         items.clear();
         this.setChanged();
+    }
+
+    @Override
+    public int getMaxStackSize() {
+        return 10000;
     }
 }

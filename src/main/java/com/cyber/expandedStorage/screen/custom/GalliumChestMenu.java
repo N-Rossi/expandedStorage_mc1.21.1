@@ -5,6 +5,7 @@ import com.cyber.expandedStorage.screen.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.Container;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -23,7 +24,18 @@ public class GalliumChestMenu extends AbstractContainerMenu {
         // Chest inventory (3 rows of 9)
         for (int row = 0; row < 3; ++row) {
             for (int col = 0; col < 9; ++col) {
-                this.addSlot(new Slot(container, col + row * 9, 8 + col * 18, 18 + row * 18));
+                this.addSlot(new Slot(container, col + row * 9, 8 + col * 18, 18 + row * 18) {
+                    @Override
+                    public int getMaxStackSize() {
+                        System.out.println("Custom slot with 10k limit applied");
+                        return 10000;
+                    }
+                    @Override
+                    public int getMaxStackSize(ItemStack stack) {
+                        System.out.println("Custom slot with 10k limit applied");
+                        return 10000;
+                    }
+                });
             }
         }
 
